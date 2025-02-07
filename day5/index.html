@@ -8,13 +8,20 @@
         pre{
             font-size: 2rem;
         }
-        .architects{
+        .architect{
             position: relative;
-            
+            /* height: 80vh;
+            wid
+            th: 95vw; */
+        }
+        .architect img{
+           height: 99vh;
+            width: 95vw; 
+
         }
         #br{
             position: absolute;
-            top:57%;
+            top:40%;
             right:39%;
             font-size: 50px;
             
@@ -27,58 +34,40 @@
          }
          .images{
             position: relative;
+            display: inline-block;
          }
          #a{
             position: absolute;
             top: 4px;
-            left: 118px;
+            left: 20px;
             padding: 7px;
 
 
          }
-         #b{
+        @media (max-width:768px) {
+            nav{
+           display: none;     
+            
+        }
+        #br{
             position: absolute;
-            top: 4px;
-            left: 462px;
-            padding: 7px;
-         }
-         #c{
-            position: absolute;
-            top: 4px;
-            left: 806px;
-            padding: 7px;
-         }
-         #d{
-                position: absolute;
-                top: 4px;
-                left: 1150px;
-                padding: 7px;
-            }
-            #e{
-                position: absolute;
-                bottom: 176px;
-                left: 118px;
-                padding: 7px;
+            top:40%;
+            left:30%;
+            font-size: 20px;
+    
+            
+        }
+        #lastimage{
+            width: 99vw;
+            height: 50vh;
+        }
+        .architect img{
+            height: 50vh;
+        }
 
-            }
-            #f{
-                position: absolute;
-                bottom: 176px;
-                left: 462px;
-                padding: 7px;
-            }
-            #g{
-                position: absolute;
-                bottom: 176px;
-                left: 806px;
-                padding: 7px;
-            }
-            #h{
-                position: absolute;
-                bottom: 176px;
-                left: 1150px;
-                padding: 7px;
-            }
+       
+    }
+    
             .people{
                 display: inline-block;
                 
@@ -98,6 +87,7 @@
             
                 
             }
+           
             .contact button{
                 padding: 5px;
                 border: 2px solid;
@@ -132,7 +122,7 @@
             a:active{
                 color: green;
             }
-            @media (max-width:768px) 
+          
 
          
     </style>
@@ -149,49 +139,52 @@
 
 <!-- short images -->
 
-<section id="bookmark1"></section>
+<section id="bookmark1">
 <b>PROJECTS</b><hr>
 <center>
 <div  class="images">
     <img src="summer house.jpg" alt="">
     <p   id="a"  style="background-color: black; color: white;"><b>Summer House</b></p>
 
+</div>
 
-
-
+<div  class="images">
     <img src="barn house.jpg" alt="">
-    <p   id="b"  style="background-color: black; color: white;"><b>Barn House</b></p>
+    <p   id="a"  style="background-color: black; color: white;"><b>Barn House</b></p>
+</div>
 
 
 
-
-
+<div  class="images">
     <img src="renovated.jpg" alt="">
-    <p   id="c"  style="background-color: black; color: white;"><b>Renovated House</b></p>
+    <p   id="a"  style="background-color: black; color: white;"><b>Renovated House</b></p>
+</div>
 
 
-
-
+<div  class="images">
 
     <img src="brick house.jpg" alt="">
-    <p   id="d"  style="background-color: black; color: white;"><b>brick House</b></p>
+    <p   id="a"  style="background-color: black; color: white;"><b>brick House</b></p>
 
-
-
+</div>
+<div  class="images">
 <img src="summer house.jpg" alt="">
-<p   id="e"  style="background-color: black; color: white;"><b>Summer House</b></p>
+<p   id="a"  style="background-color: black; color: white;"><b>Summer House</b></p>
 
-
+</div>
+<div  class="images">
 <img src="renovated.jpg" alt="">
-<p   id="f"  style="background-color: black; color: white;"><b>Renovated House</b></p>
+<p   id="a"  style="background-color: black; color: white;"><b>Renovated House</b></p>
 
-
+</div>
+<div  class="images">
 <img src="brick house.jpg" alt="">
-<p   id="g"  style="background-color: black; color: white;"><b>Brick House</b></p>
-
-
+<p   id="a"  style="background-color: black; color: white;"><b>Brick House</b></p>
+</div>
+<div  class="images">
 <img src="barn house.jpg" alt="">
-<p   id="h"  style="background-color: black; color: white;"><b>Barn House</b></p>
+<p   id="a"  style="background-color: black; color: white;"><b>Barn House</b></p>
+</div>
 </sction>
 
 
@@ -261,7 +254,7 @@
     <input type="text" placeholder="comment"><br><br>
     <button >SEND MESSAGE</button><br><br><br><br>
 </section>
-<img src="last image.jpg" alt="">
+<img src="last image.jpg" alt="" id="lastimage">
 <footer style="background-color: black; height: 100px;">
  <center> <p  style="color: white; font-size: 20px; margin-top: 1px; padding: 35px;">Powered by-NITHIN REDDY</p></center>
 </footer>
