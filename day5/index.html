@@ -21,7 +21,7 @@
         }
         #br{
             position: absolute;
-            top:40%;
+            top:70%;
             right:39%;
             font-size: 50px;
             
@@ -45,28 +45,31 @@
 
          }
         @media (max-width:768px) {
-            nav{
-           display: none;     
+            /* nav{
+                width: 95vw;
+                background-color: black; */
+         
             
         }
         #br{
             position: absolute;
-            top:40%;
+            top:50%;
             left:30%;
-            font-size: 20px;
+            font-size: 35px;
     
             
         }
         #lastimage{
-            width: 99vw;
-            height: 50vh;
+            width: 95vw;
+            height: 95vh;
+        
         }
         .architect img{
-            height: 50vh;
+            height: 95vh;
+            
         }
 
        
-    }
     
             .people{
                 display: inline-block;
@@ -124,13 +127,26 @@
             }
           
 
-         
+         .nav nav{
+            display: flex;
+            position: fixed;
+            background-color:white; 
+            z-index: 3;
+            top: 0;
+            padding: 20px;
+            width: 95vw;
+
+         }
+         .nav a{
+            margin-left: 20px;
+         }
     </style>
 </head>
 <body>
     <center>
+        <div class="nav">
    <pre><nav><b style="color:red;">NITHIN</b> ARCHITECTS                                          <a href="#bookmark1">PROJECTS</a>    <a href="#bookmark2">ABOUT</a>    <a href="#bookmark3">CONTACT</a> </nav></pre>
-
+</div>
    <div class="architect">
     <img src="architect.jpg" alt="">
     <p id="br"  style="color: white;"><b style="background-color: black;color: red; font-weight:200;">NITHIN</b>Architects</p>
@@ -254,7 +270,7 @@
     <input type="text" placeholder="comment"><br><br>
     <button >SEND MESSAGE</button><br><br><br><br>
 </section>
-<img src="last image.jpg" alt="" id="lastimage">
+<center><img src="last image.jpg" alt="" id="lastimage"></center>
 <footer style="background-color: black; height: 100px;">
  <center> <p  style="color: white; font-size: 20px; margin-top: 1px; padding: 35px;">Powered by-NITHIN REDDY</p></center>
 </footer>
